@@ -30,7 +30,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_tBUF4ESBEe2718-EJCyi-Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9tD3IEVVEe2718-EJCyi-Q" name="[LAB] Structure" repPath="#_9s8iYEVVEe2718-EJCyi-Q" changeId="4c77bcee-edea-4016-938d-b036079eba7b">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9tD3IEVVEe2718-EJCyi-Q" name="[LAB] Structure" repPath="#_9s8iYEVVEe2718-EJCyi-Q" changeId="8c65b617-578c-4b5c-b599-5e3bb1ff06c1">
         <eAnnotations xmi:type="description:DAnnotation" uid="_9tHhgEVVEe2718-EJCyi-Q" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9tHhgUVVEe2718-EJCyi-Q" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9tHhgkVVEe2718-EJCyi-Q" key="hide.computed.physical.links.filter" value="true"/>
@@ -3408,7 +3408,7 @@
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t2KLtEVcEe2718-EJCyi-Q"/>
                   </children>
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_t2JkoUVcEe2718-EJCyi-Q" fontColor="3038217" fontName=".AppleSystemUIFont" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t2JkokVcEe2718-EJCyi-Q" x="851" y="114" width="161" height="50"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t2JkokVcEe2718-EJCyi-Q" x="281" y="164" width="161" height="50"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="__0kSAEVcEe2718-EJCyi-Q" type="3007" element="__z-cIEVcEe2718-EJCyi-Q">
                   <children xmi:type="notation:Node" xmi:id="__0kSA0VcEe2718-EJCyi-Q" type="5003">
@@ -3447,7 +3447,16 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_ZO-FQ0VcEe2718-EJCyi-Q"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_ZO9eMUVcEe2718-EJCyi-Q" fontName=".AppleSystemUIFont" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZO9eMkVcEe2718-EJCyi-Q" x="9" y="424" width="1047" height="273"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZO9eMkVcEe2718-EJCyi-Q" x="9" y="424" width="649" height="273"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_xzqN4EiPEe2MXKNjYQJoCw" type="3008" element="_xxC-wEiPEe2MXKNjYQJoCw">
+              <children xmi:type="notation:Node" xmi:id="_xz10EEiPEe2MXKNjYQJoCw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_xz3CMEiPEe2MXKNjYQJoCw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_xz3CMUiPEe2MXKNjYQJoCw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_xz3CMkiPEe2MXKNjYQJoCw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_xzqN4UiPEe2MXKNjYQJoCw" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xzqN4kiPEe2MXKNjYQJoCw" x="695" y="434" width="340" height="250"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="__QO6EkVVEe2718-EJCyi-Q"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="__QO6E0VVEe2718-EJCyi-Q"/>
@@ -4562,6 +4571,15 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='LAB%20Logical%20Component']/@subNodeMappings[name='LAB%20Logical%20Function']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_xxC-wEiPEe2MXKNjYQJoCw" name="Power supply">
+        <target xmi:type="org.polarsys.capella.core.data.cs:Part" href="Projekt_Mech_Systeme.capella#9b9d7d72-026b-4093-bdd4-0d416a99107b"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.cs:Part" href="Projekt_Mech_Systeme.capella#9b9d7d72-026b-4093-bdd4-0d416a99107b"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.la:LogicalComponent" href="Projekt_Mech_Systeme.capella#a13c876c-9d99-4fb0-8b07-0d796686c748"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_xxEz8EiPEe2MXKNjYQJoCw" borderSize="1" borderSizeComputationExpression="1" borderColor="74,74,151" backgroundStyle="GradientTopToBottom" backgroundColor="195,230,255" foregroundColor="150,177,218">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='LAB%20Logical%20Component']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='LAB%20Logical%20Component']"/>
+      </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_A0uLoEVWEe2718-EJCyi-Q" name="Inlet System">
       <target xmi:type="org.polarsys.capella.core.data.cs:Part" href="Projekt_Mech_Systeme.capella#db2a31a8-b496-4f46-838e-0c7b312f1d5e"/>
@@ -5283,7 +5301,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Function%20Breakdown']/@defaultLayer/@nodeMappings[name='LFB_LogicalFunction']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jUZr60VWEe2718-EJCyi-Q" target="619ec139-1764-46bc-8565-f20fd3ce8232" name="Transport orizontal" semanticElements="619ec139-1764-46bc-8565-f20fd3ce8232" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jUZr60VWEe2718-EJCyi-Q" name="Transport orizontal" width="7" height="7" resizeKind="NSEW">
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -5292,7 +5310,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Function%20Breakdown']/@defaultLayer/@nodeMappings[name='LFB_LogicalFunction']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jUZr7kVWEe2718-EJCyi-Q" target="d4cd1d10-775c-4991-aa19-1e113783df4d" name="Lift" semanticElements="d4cd1d10-775c-4991-aa19-1e113783df4d" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jUZr7kVWEe2718-EJCyi-Q" name="Lift" width="7" height="7" resizeKind="NSEW">
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -5301,7 +5319,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Function%20Breakdown']/@defaultLayer/@nodeMappings[name='LFB_LogicalFunction']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jUaS8UVWEe2718-EJCyi-Q" target="014f9f09-0ecc-41b2-aaef-d9c96b4fca4a" name="Rotatw" semanticElements="014f9f09-0ecc-41b2-aaef-d9c96b4fca4a" width="7" height="7" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_jUaS8UVWEe2718-EJCyi-Q" name="Rotatw" width="7" height="7" resizeKind="NSEW">
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
