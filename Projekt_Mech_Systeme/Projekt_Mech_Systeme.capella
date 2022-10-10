@@ -1802,6 +1802,8 @@
               name="Transport System 2" abstractType="#582b9e9d-a428-4d71-8375-a217ea9f445d"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="46ad5164-60de-4dcb-aed7-7c2141354b4b"
               name="Control Unit" abstractType="#d4d111bd-3a4c-4da8-8786-ea7b68b10a59"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9b9d7d72-026b-4093-bdd4-0d416a99107b"
+              name="Power supply" abstractType="#a13c876c-9d99-4fb0-8b07-0d796686c748"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="0ba08812-f141-41bc-a508-61658f553a02" targetElement="#629d885e-04b4-459d-801a-3d108bd82466"
               sourceElement="#1f4cb649-4793-452d-8419-2c401deb6487"/>
@@ -1866,6 +1868,8 @@
                 id="2e18dc99-873d-407d-b015-a0954fbfa0c3" targetElement="#a965ef58-b825-4f5d-be3b-2d8bb04ee63a"
                 sourceElement="#d4d111bd-3a4c-4da8-8786-ea7b68b10a59"/>
           </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="a13c876c-9d99-4fb0-8b07-0d796686c748" name="Power supply"/>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="7254f4e2-1713-46c8-ac2a-16c971420473" name="User" actor="true">
