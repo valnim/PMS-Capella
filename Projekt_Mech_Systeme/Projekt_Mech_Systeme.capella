@@ -44,10 +44,42 @@
       <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
           id="584971f8-4d29-4910-980c-4e96c3c4a111" name="Operational Activities">
         <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-            id="0918b0f6-79df-4521-b3f4-3f6638f5064e" name="Root Operational Activity"/>
+            id="0918b0f6-79df-4521-b3f4-3f6638f5064e" name="Root Operational Activity">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="f6bfb627-329d-4522-8bc0-bcd2720e0cc8" name="Communicate New Order "/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="c07d697f-2377-40c0-a8cf-4b2e89006fab" name="Communicate New Order _1"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="ffd6dc24-0786-4196-90f4-4d353880e697" name="Input Order Details Into Transport System"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="7bfc9dac-5172-4d8a-89b6-48e7fa4defdd" name="Start Transport-Process"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="379948c2-ef09-4afa-b770-43eebe4701c8" name="Communicate Order Fulfillment"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="185e2849-e8d1-4577-8e13-1e4a8b52260d" name="Monitor Order Process during Transportation"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="4b15788d-4c6a-4367-82e4-f4888d3ac152" name="Confirm Job Determination"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="4f4fa8fb-4c28-479d-bad1-f65336c78eb6" name="Separate and Count Bullets in Transport Bin "/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+              id="b782d87a-3212-4c53-bc85-868f34210e66" name="Move Bins from Position A to Position B "/>
+        </ownedOperationalActivities>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
-          id="5c5e3235-22e1-4dda-b6dd-b6c9e10a1e54" name="Operational Capabilities"/>
+          id="5c5e3235-22e1-4dda-b6dd-b6c9e10a1e54" name="Operational Capabilities">
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="3286acfd-c33b-4f8b-9c8c-287cd53f9304" name="Transport goods from Start-Position A to End-position B">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="eb9e141d-e7cc-41da-ac5e-37a9958fdc2a" included="#8a888375-1452-4748-a7eb-37d738748178"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="8a888375-1452-4748-a7eb-37d738748178" name="Group, Reckognize and Control Goods">
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="a5aa8910-6c01-4d44-b68b-11e490c89481" involved="#967c746f-cc48-4a1f-9b37-d4017c84ea35"/>
+          <ownedEntityOperationalCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.oa:EntityOperationalCapabilityInvolvement"
+              id="c7582886-9438-473d-b176-83692b562f92" involved="#78f3555e-6574-4e2d-8255-50b19cf1f1b1"/>
+        </ownedOperationalCapabilities>
+      </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="a8c78a5f-9927-4966-98a3-fa6418493ea5" name="Interfaces"/>
       <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
@@ -57,13 +89,48 @@
       <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="1473b371-43a5-48f8-aba2-9327df48c452"
           name="Operational Entities">
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a29ff9a2-1143-4af4-b164-273cea5c5c2f"
-            name="OE 1" abstractType="#b5dd293e-6182-4625-be80-a0ad5137b94f"/>
+            name="Transport Systems" abstractType="#b5dd293e-6182-4625-be80-a0ad5137b94f"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="32606d48-3767-45f6-b83d-926716ca8845"
-            name="OA 2" abstractType="#78f3555e-6574-4e2d-8255-50b19cf1f1b1"/>
+            name="System-User" abstractType="#78f3555e-6574-4e2d-8255-50b19cf1f1b1"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2b876c2c-97dc-4cf8-be94-7dc46be77f60"
+            name="Customer" abstractType="#967c746f-cc48-4a1f-9b37-d4017c84ea35"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="b5dd293e-6182-4625-be80-a0ad5137b94f"
-            name="OE 1"/>
+            name="Transport Systems">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="156f5f8b-33c4-4968-b566-b4be5b1180e7" targetElement="#4f4fa8fb-4c28-479d-bad1-f65336c78eb6"
+              sourceElement="#b5dd293e-6182-4625-be80-a0ad5137b94f"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="b8549384-327d-49be-a430-de603b39683f" targetElement="#b782d87a-3212-4c53-bc85-868f34210e66"
+              sourceElement="#b5dd293e-6182-4625-be80-a0ad5137b94f"/>
+        </ownedEntities>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="78f3555e-6574-4e2d-8255-50b19cf1f1b1"
-            name="OA 2" actor="true" human="true"/>
+            name="System-User" actor="true" human="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="048f8671-57af-4e80-869e-9465c96911d0" targetElement="#ffd6dc24-0786-4196-90f4-4d353880e697"
+              sourceElement="#78f3555e-6574-4e2d-8255-50b19cf1f1b1"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="14f6d80a-ae18-4e4d-b4f8-4c75c4551c71" targetElement="#7bfc9dac-5172-4d8a-89b6-48e7fa4defdd"
+              sourceElement="#78f3555e-6574-4e2d-8255-50b19cf1f1b1"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="2da03cde-71d5-420f-9f12-16f9533f2c9c" targetElement="#379948c2-ef09-4afa-b770-43eebe4701c8"
+              sourceElement="#78f3555e-6574-4e2d-8255-50b19cf1f1b1"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="af6830b8-ac3a-4fe6-8deb-468e730161b8" targetElement="#185e2849-e8d1-4577-8e13-1e4a8b52260d"
+              sourceElement="#78f3555e-6574-4e2d-8255-50b19cf1f1b1"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="967c746f-cc48-4a1f-9b37-d4017c84ea35"
+            name="Customer" description="&lt;p>The customer of our system is interested in the fact that our transport system works reliably and moves goods in a certain period of time.&lt;/p>&#xA;"
+            actor="true" human="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="857b7f75-119b-415d-96b8-821eb3fbd4fc" targetElement="#f6bfb627-329d-4522-8bc0-bcd2720e0cc8"
+              sourceElement="#967c746f-cc48-4a1f-9b37-d4017c84ea35"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="20ca1071-fbaf-4646-b556-471a777c9a4f" targetElement="#c07d697f-2377-40c0-a8cf-4b2e89006fab"
+              sourceElement="#967c746f-cc48-4a1f-9b37-d4017c84ea35"/>
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="b5fdc51a-90c3-464b-bacd-33fda0c9ad9e" targetElement="#4b15788d-4c6a-4367-82e4-f4888d3ac152"
+              sourceElement="#967c746f-cc48-4a1f-9b37-d4017c84ea35"/>
+        </ownedEntities>
       </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
@@ -125,7 +192,7 @@
                 id="0a8cf0da-c293-4ae4-9ad5-f3fc655e276f" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="df9d6ee9-db0d-460a-a525-f00ad702cec1" name="Manual Control">
+              id="df9d6ee9-db0d-460a-a525-f00ad702cec1" name="Manual Start good-separation-process">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="b5e229ba-e36c-479c-ba7b-72618533e316" name="FOP 1"/>
           </ownedFunctions>
@@ -688,7 +755,7 @@
               id="ab84efc8-05a3-401e-90b6-bd0bcf6dba12" involved="#15de164c-d59e-4dd8-a3c1-8f4266c70262"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="cf0565d7-106b-4d0e-8f14-d3f0d15935ab" name="1.2.1 Fully automated">
+            id="cf0565d7-106b-4d0e-8f14-d3f0d15935ab" name="1.2.1 Automated Separation, Reckonition and Transport of Bullets">
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
               id="d43d3038-d725-4e04-aa38-4672a65554d8" included="#399a61ec-711f-4acb-bb03-b94abf6808fd"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
@@ -710,7 +777,7 @@
               id="d183969b-ec48-4dd8-b11b-4f6931f0eb05" involved="#629d885e-04b4-459d-801a-3d108bd82466"/>
         </ownedCapabilities>
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
-            id="7a3c3431-bc5c-4266-acfd-5557282e0b2d" name="1.2.2 Manual Control">
+            id="7a3c3431-bc5c-4266-acfd-5557282e0b2d" name="1.2.2 Manual Control Start/Stop">
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
               id="630a8883-c57d-490a-b1b4-110b72503630" included="#0f2adb40-95ca-4df4-bc2e-6b337fef06df"/>
           <ownedCapabilityInvolvements xsi:type="org.polarsys.capella.core.data.ctx:CapabilityInvolvement"
